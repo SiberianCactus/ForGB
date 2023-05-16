@@ -25,6 +25,18 @@ void Print(string[] arr)
         Console.WriteLine();
 	}
 
+string[] changeArray(string[] array)
+{
+    string[] changedArr = new string[0];
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)   
+    {
+        changedArr = changedArr.Append(array[i]).ToArray();
+    }
+}
+return changedArr;
+}
 
 
 
@@ -45,3 +57,6 @@ for (int i = 0; i < arr.Length; i++)
      fillArr(arr);
        Console.Write("Стандартный массив: ");
     Print(arr);
+   string[] mas = changeArray(arr);
+    Console.Write("Измененный массив: ");
+    Print(mas);
