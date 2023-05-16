@@ -8,3 +8,21 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+
+
+string[] fillArr(string[] arr)
+{
+for (int i = 0; i < arr.Length; i++)
+{
+    string symb = Console.ReadLine()!;
+            arr[i]  = symb;
+    }
+    return arr;
+}
+
+     Console.WriteLine("Введите количество эелементов массива");
+    int start = int.Parse(Console.ReadLine()!);
+    string[] arr = new string[start];
+    Console.WriteLine("Введите элементы массива");
+     fillArr(arr);
+   
